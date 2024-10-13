@@ -16,7 +16,7 @@
     - [ ] Tell about the innovation V3 brings
   - Uniswap V4
     - [ ] Tell what V4 brings (more engineering, actions grouping, single contract, hooks)
-  - Development Environment 
+  - Development Environment
     - [ ] Maybe some more info about Ethereum (e.g. some illustrations)
       [ ] Focus on Foundry/Forge only
   - What We'll Build
@@ -34,7 +34,7 @@
   - Accounting
     - [ ] Unlock
     - [ ] Deltas tracking
-    - [ ] Finished liquidity provision
+    - [ ] Finished liquidity provision (settle debt)
   - Ticks Indexing
     - [ ] Copy from Tick Bitmap Index
     - [ ] Copy from Generalized Minting
@@ -52,6 +52,7 @@
   - Finished Swapping
     - [ ] Copy from Generalized Swapping
     - [ ] Better name, should continue First Swap
+    - [ ] Settle debt, take credit
   - Deployment
     - [ ] Copy from V3, improve smth
 
