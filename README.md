@@ -6,7 +6,7 @@
 
 🚧🚧🚧🚧🚧🚧🚧🚧🚧 🚨 🚧🚧🚧🚧🚧🚧🚧🚧🚧 🚨 🚧🚧🚧🚧🚧🚧🚧🚧🚧 
 
-## ToC
+## Preliminary Table of Contents
 0. Introduction
   - How Markets Work
     - [ ] Copy from V3, improve smth
@@ -18,7 +18,7 @@
     - [ ] Tell what V4 brings (more engineering, actions grouping, single contract, hooks)
   - Development Environment
     - [ ] Maybe some more info about Ethereum (e.g. some illustrations)
-      [ ] Focus on Foundry/Forge only
+    - [ ] Focus on Foundry/Forge only
   - What We'll Build
     - [ ] Copy from V3, improve smth
 
@@ -32,7 +32,7 @@
     - [ ] Use `PoolManager` as the contract, but store only 1 pool
     - [ ] Skip unlock/deltas for now
   - Accounting
-    - [ ] Unlock
+    - [ ] Unlock (sequence diagram)
     - [ ] Deltas tracking
     - [ ] Finished liquidity provision (settle debt)
   - Ticks Indexing
@@ -46,12 +46,13 @@
     - [ ] Copy from V3, improve smth
   - First Swap
     - [ ] Copy from V3, improve smth
+    - [ ] Maybe not necessary (go to amt calc right away and then implement swap)
   - Output Amount Calculation
     - [ ] Copy from V3, improve smth
     - [ ] Add Math in Solidity
   - Finished Swapping
     - [ ] Copy from Generalized Swapping
-    - [ ] Better name, should continue First Swap
+    - [ ] Better title, should finish First Swap
     - [ ] Settle debt, take credit
   - Deployment
     - [ ] Copy from V3, improve smth
@@ -74,10 +75,14 @@
   - Introduction
     - [ ] Copy from V3, improve smth
   - Multiple Pools in One Contract
-    - [ ] Update PoolManager to support multiple pools
-    - [ ] Add/improve `initialize()`
+    - [ ] Upgrade PoolManager to support multiple pools
+    - [ ] Add/upgrade `initialize()`
+  - Router Contract
+    - [ ] Build a basic router
+    - [ ] Use the router for multi-pool swaps
+    - [ ] Settle/take via the router
   - Tick Rounding
-    - [ ] Copy from V3, improve smth
+    - [ ] Check if still needed, maybe merge with a previous subchapter
 
 5. Swap and Protocol Fees
   - Introduction
@@ -89,9 +94,16 @@
 
 6. Hooks
   - Introduction
+    - [ ] Why hooks are needed
+    - [ ] Hook examples (https://github.com/ora-io/awesome-uniswap-hooks)
   - How Hooks Work
+    - [ ] Pre/post
   - Hook Contract Address Generation
+    - [ ] Security (hook address commits to pool id)
   - Adding Hooks
+    - [ ] Static hooks
+    - [ ] Hooks that modify swap/liquidity amounts
+  - Dynamic LP Fees
 
 7. Periphery Contracts
-  - Probably just an overview of important contracts (PM, Router, Quoter)
+  - [ ] Probably just an overview of important contracts (PM, Quoter)
